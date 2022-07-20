@@ -17,7 +17,7 @@ library(DRviaSPCN)
 ```
 
 ### <font face="微软雅黑"> Introduce </font>
-<font face="微软雅黑"> We developed a novel software package (DRviaSPCN) that enables repurposing drugs via a subpathway (SP) crosstalk network. The main process include construction of the SP network and calculation of the centrality scores of SPs to reflect the influence of SP crosstalk, calculating the enrichment score of subpathways and weighting them with corresponding centrality score to get weighted enrichment score(weighted-ES), calculation of enrichment scores of drug- and disease-induced dysfunctional SPs and weighted them by the centrality scores of SPs, evaluation of the drug-disease reverse association at the weighted SP level, identification of cancer candidate drugs. There are also several functions used to visualize the results such as visualization of the subpathway network structure of interest, chemical molecular formula of the drug or compound, and heatmap of the expression of subpathways in different sample types.
+<font face="微软雅黑"> We developed a novel software package (DRviaSPCN) that enables repurposing drugs via a subpathway (SP) crosstalk network. The main process include construction of the SP network and calculation of the centrality scores of SPs to reflect the influence of SP crosstalk, calculation of enrichment scores of drug- and disease-induced dysfunctional SPs and weighted them by the centrality scores of SPs, evaluation of the drug-disease reverse association at the weighted SP level, identification of cancer candidate drugs. There are also several functions used to visualize the results such as visualization of the subpathway network structure of interest, chemical molecular formula of the drug or compound, and heatmap of the expression of subpathways in different sample types.
 
 This vignette illustrates how to easily use the **DRviaSPCN package**. Here, with the use of functions in this package, users could identify potential therapeutic drugs for disease through estimating drug-disease reverse association.
 
@@ -64,7 +64,7 @@ DrugSPPvalueMatrix<-GetData("DrugSPPvalueMatrix")
 *****
 ### <font face="微软雅黑">Example 1 : Calculating the centrality scores of subpathways. </font>
 
-<font face="微软雅黑">  The function "CalCentralityScore" was used to calculate the centrality scores of SPs to reflect the crosstalk influence, which were used as weights in the calculation of drug-disease reverse association score. 
+<font face="微软雅黑">  The function `CalCentralityScore` was used to calculate the centrality scores of SPs to reflect the crosstalk influence, which were used as weights in the calculation of drug-disease reverse association score. 
 
 The commands are as follows: </font>
 
