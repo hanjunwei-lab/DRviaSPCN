@@ -55,7 +55,7 @@ DrugSPESCMatrix<-GetData("DrugSPESCMatrix")
 DrugSPPvalueMatrix<-GetData("DrugSPPvalueMatrix")
 ```
 
-#Example 1 : Calculating the centrality scores of subpathways.
+# Example 1 : Calculating the centrality scores of subpathways.
 > The function `CalCentralityScore` was used to calculate the centrality scores of SPs to reflect the crosstalk influence, which were used as weights in the calculation of drug-disease reverse association score. 
 
 
@@ -71,7 +71,7 @@ CentralityScoreResult<-CalCentralityScore(ExpData=GEP,Label=Slabel,nperm = 1000)
 
 ```
 
-#Example 2 : Calculating the drug-disease reverse association score and corresponding pvalue of drugs.
+# Example 2 : Calculating the drug-disease reverse association score and corresponding pvalue of drugs.
 > The function `Optimaldrugs` is used to calculate the *DES* and statistic significance of drugs. The detailed algorithm can be seen in the introduction part. Users could screen out the optimal therapeutic drugs according to a specific threshold. Here we provide weighted and unweighted methods to calculate the score, which can be selected by parameters *weight = ''* . The screening criteria of the up- and down-regulated subpathways can be changed through the parameters *pcut = ''* and *topcut = ''*.
 
 ```
@@ -82,7 +82,7 @@ Opdrugresult<-Optimaldrugs(ExpData=GEP,Label=Slabel,DrugSPESC=DrugSPESCMatrix,
 ```
 
 
-#Visualize 1: Plot a subpathway network structure graph.
+# Visualize 1: Plot a subpathway network structure graph.
 > The function `plotSPW` used to plot a subpathway network structure graph. The user just needs to input an interest subpathway id such as "00020_4".
 
 ```
@@ -92,7 +92,7 @@ library(igraph)
 plotSPW("00020_4")
 ```
 
-#Visualize 2: Plot a chemical molecular formula of the drug or compound .</font>
+# Visualize 2: Plot a chemical molecular formula of the drug or compound .</font>
 
 > The function `getMolecularFm` can obtain a chemical molecular formula of the drug or compound. Then users could visualize the molecular formula through function "plot".
 
@@ -106,7 +106,7 @@ plot(Mole_formula)
 ```
 
 
-#Visualize 3: Plot a heatmap of the subpathways that are regulated by disease.</font>
+# Visualize 3: Plot a heatmap of the subpathways that are regulated by disease.</font>
 
 > The function `Disease2SPheatmap` plots a heat map of the subpathways that are regulated by disease. The input is the result of function `CalCentralityScore`, disease gene expression profile and sample class in the expression profile. We map subpathways to the disease gene expression through ssgsea to get a subpathway abundance matrix. Then we visualize the matrix by heatmap. Users could change the threshold that is used to screen significant subpathways through the param *pcut*.
 
@@ -125,7 +125,7 @@ Disease2SPheatmap(CentralityScore=CentralityScoreResult,ExpData=GEP,Label=Slabel
 ```
 
 
-#Visualize 4: Plot heatmaps of the subpathways that are regulated by drugs.</font>
+# Visualize 4: Plot heatmaps of the subpathways that are regulated by drugs.</font>
 
 > The function `Drug2SPheatmap` plots heatmaps of the subpathways that are regulated by drugs. The function input is a character which is drug name, disease gene expression profile and sample class in the expression profile. We map subpathways to the disease gene expression through ssgsea to get a subpathway abundance matrix. Then we visualize the matrix by heatmap. Users could change the threshold that is used to screen significant subpathways through the param *pcut*. The result of this function is a list including all heatmaps.
 
