@@ -2,7 +2,7 @@
 
 Drug Repurposing in Cancer via a Subpathway Crosstalk Network
 
-#Introduce
+# Introduce
 
 > We developed a novel software package (DRviaSPCN) that enables repurposing drugs via a subpathway (SP) crosstalk network. There are also several functions used to visualize the results such as visualization of the subpathway network structure of interest, chemical molecular formula of the drug or compound, and heatmap of the expression of subpathways in different sample types.
 
