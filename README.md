@@ -146,7 +146,7 @@ Drug2SPheatmap(drugname="methotrexate_HL60_6_8.8e-06",
 ```
 
 
-
+The `DRviaSPCN` is published in Bioinformatics. Please cite the following article when using `DRviaSPCN`: https://doi.org/10.1093/bioinformatics/btac611.
 
 
 
