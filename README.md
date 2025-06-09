@@ -1,7 +1,9 @@
 # DRviaSPCN
 
 Drug Repurposing in Cancer via a Subpathway Crosstalk Network
-> The `DRviaSPCN` is published in Bioinformatics. Please cite the following article when using `DRviaSPCN`: https://doi.org/10.1093/bioinformatics/btac611.
+> The `DRviaSPCN` is published in Bioinformatics. Please cite the following article when using `DRviaSPCN`: https://doi.org/10.1093/bioinformatics/btac611
+        
+        .
 
 # Introduce
 
@@ -146,7 +148,13 @@ Drug2SPheatmap(drugname="methotrexate_HL60_6_8.8e-06",
 
 ```
 
+# Citation
+These codes and data are intended for research use only.
 
+``DRviaSPCN`` has already been published in *Bioinformatics*. If you use ``DRviaSPCN`` or these codes in your publication, please cite the paper:
+
+Wu J, Li X, Wang Q, Han J. DRviaSPCN: a software package for drug repurposing in cancer via a subpathway crosstalk network. Bioinformatics. 2022;38(21):4975-4977. https://doi.10.1093/bioinformatics/btac611
+        
 
 
 
