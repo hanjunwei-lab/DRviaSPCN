@@ -2,8 +2,6 @@
 
 Drug Repurposing in Cancer via a Subpathway Crosstalk Network
 > The `DRviaSPCN` is published in Bioinformatics. Please cite the following article when using `DRviaSPCN`: https://doi.org/10.1093/bioinformatics/btac611
-        
-        .
 
 # Introduce
 
